@@ -1,9 +1,10 @@
 import UIKit
 
+//función para el ordenamiento de numeros
 func ordenarValores(nume: [Int])->  [Int]{
     return nume.sorted()
 }
-
+//Función para calcular la estadistica de la media, moda y mediana
 func calcularEstadisticas(nume: [Int]) -> (media: Double, moda: Double, mediana: Double){
     
     nume.forEach{
@@ -27,7 +28,7 @@ func calcularEstadisticas(nume: [Int]) -> (media: Double, moda: Double, mediana:
     }
     
     //moda
-    var frecuencia = [Int: Int] = [:]
+    var frecuencia: [Int: Int] = [:]
     for numero in nume{
         if let cuenta = frecuencia[numero]{
             frecuencia[numero] = cuenta + 1
@@ -37,11 +38,15 @@ func calcularEstadisticas(nume: [Int]) -> (media: Double, moda: Double, mediana:
         }
     }
     
+    let moda = Double(frecuencia.max(by: {a, b in a.value < b.value})?.key ?? 0)
     
-    return (media: media, moda: 0, mediana: mediana)
+    return (media: media, moda: moda, mediana: mediana)
 }
 
-print("Moda: ")
+let estadisticas = calcularEstadisticas(nume: [1, 2, 3, 3, 4, 4, 4, 5])
+print("Media: \(estadisticas.media)")
+print("Mediana: \(estadisticas.mediana)")
+print("Moda: \(estadisticas.moda)")
 
 /*
 let fruitPrice = ["grapes": 2.5, "Apricot": 3.5, "Pear": 1.6]
