@@ -1,5 +1,12 @@
 import UIKit
 
+/*
+ Ejercicio 2: Funciones Estáticas y Clases
+ Crear una clase Calculadora con funciones estáticas sumar y restar. Implementar
+ una función que acepte un array de enteros y use las funciones estáticas para calcular la
+ suma y la resta total de los elementos del array.
+ */
+
 // Clase Calculadora
 class Calculadora {
     static func sumar(a: Int, b: Int) -> Int {

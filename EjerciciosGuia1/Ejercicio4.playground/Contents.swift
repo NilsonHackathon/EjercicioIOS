@@ -1,7 +1,7 @@
 import UIKit
 
 /**
- : Operaciones matriciales básicas (suma y multiplicación)
+ Ejercicio 2: Operaciones matriciales básicas (suma y multiplicación)
  ● Instrucción: Escribe dos funciones, sumaMatrices y multiplicarMatrices,
  que acepten dos matrices (arrays de arrays de enteros) y devuelvan la matriz
  resultado de la suma y la multiplicación, respectivamente. Valida que las

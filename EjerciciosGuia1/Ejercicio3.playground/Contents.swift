@@ -1,5 +1,14 @@
 import UIKit
 
+/*
+ Actividad 2: Tipos de Datos y Operadores
+ Ejercicio 1: Calcular estadísticas básicas de un array de enteros
+ ● Instrucción: Escribe una función llamada calcularEstadisticas que acepte
+ un array de enteros y devuelva una tupla con la media, mediana y moda del array.
+ Implementa la lógica para calcular cada una de estas estadísticas y prueba la
+ función con un array de ejemplo.
+ */
+
 //función para el ordenamiento de numeros
 func ordenarValores(nume: [Int])->  [Int]{
     return nume.sorted()

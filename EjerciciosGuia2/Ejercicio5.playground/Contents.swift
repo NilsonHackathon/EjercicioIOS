@@ -1,5 +1,12 @@
 import UIKit
 
+/*
+ Ejercicio 5: Clases, Structs y Polimorfismo
+ Crear un protocolo Empleado con un método calcularSalario. Implementar una
+ clase EmpleadoBase y una estructura EmpleadoContrato que conformen al protocolo
+ Empleado. Crear una función que acepte un array de Empleado y calcule el salario total de todos los empleados
+ */
+
 // Protocolo Empleado
 protocol Empleado {
     func calcularSalario() -> Double

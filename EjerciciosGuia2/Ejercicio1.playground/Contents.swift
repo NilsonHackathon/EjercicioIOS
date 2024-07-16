@@ -1,5 +1,16 @@
 import UIKit
 
+/*
+ Ejercicio 1: Enumeraciones y Delegación
+ Implementar una enumeración EstadoPedido con casos procesando, enviado, y
+ entregado. Crear un protocolo NotificacionPedido con un método
+ notificarCambioDeEstado. Implementar una clase Pedido que tenga una propiedad
+ estado de tipo EstadoPedido y una propiedad delegado de tipo
+ NotificacionPedido. Crear una función que cambie el estado del pedido y notifique al
+ delegado.
+
+ */
+
 // Enumeración EstadoPedido
 enum EstadoPedido {
     case procesando

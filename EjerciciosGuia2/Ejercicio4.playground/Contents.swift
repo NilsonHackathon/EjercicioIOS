@@ -1,5 +1,13 @@
 import UIKit
-import Security
+
+/*
+ Ejercicio 4: Enums y Funciones Estáticas
+ Implementar una enumeración OperacionMatematica con casos suma, resta,
+ multiplicacion, y division. Crear una clase OperadorMatematico con una
+ función estática realizarOperacion que acepte dos números y un caso de
+ OperacionMatematica, y devuelva el resultado de la operación.
+
+ */
 
 enum OperacionMatematica{
     case suma

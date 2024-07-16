@@ -1,5 +1,13 @@
 import UIKit
 
+/*
+ Ejercicio 3: Polimorfismo y Structs
+ Descripción: Crear un protocolo Figura con un método calcularArea. Implementar
+ estructuras Cuadrado y Rectangulo que conformen al protocolo Figura. Crear una
+ función que acepte un array de Figura y calcule el área total de todas las figuras.
+
+ */
+
 // Protocolo Figura
 protocol Figura {
     func calcularArea() -> Double
